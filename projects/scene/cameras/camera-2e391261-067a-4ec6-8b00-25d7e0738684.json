@@ -1,0 +1,104 @@
+{
+	"tags": "modified",
+	"ellipsoid": [
+		0.30000000000000004,
+		0.5,
+		0.30000000000000004
+	],
+	"ellipsoidOffset": [
+		0,
+		0,
+		0
+	],
+	"checkCollisions": true,
+	"applyGravity": true,
+	"rotation": [
+		0.009158764023248068,
+		-6.122251021214431,
+		0
+	],
+	"speed": 1.5,
+	"position": [
+		3.257660171104303,
+		1.055000000745058,
+		2.2678509026107165
+	],
+	"upVector": [
+		0,
+		1,
+		0
+	],
+	"fov": 0.6,
+	"minZ": 0.1,
+	"maxZ": 10000,
+	"inertia": 0,
+	"mode": 0,
+	"layerMask": 268435455,
+	"fovMode": 0,
+	"cameraRigMode": 0,
+	"name": "camera",
+	"id": "2e391261-067a-4ec6-8b00-25d7e0738684",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "src/scenes/scene/camera.ts",
+			"properties": {
+				"_forwardKey": {
+					"type": "KeyMap",
+					"value": 90
+				},
+				"_backwardKey": {
+					"type": "KeyMap",
+					"value": 83
+				},
+				"_strafeLeftKey": {
+					"type": "KeyMap",
+					"value": 81
+				},
+				"_strafeRightKey": {
+					"type": "KeyMap",
+					"value": 68
+				},
+				"_ballForceFactor": {
+					"type": "number",
+					"value": 20
+				}
+			}
+		}
+	},
+	"type": "UniversalCamera",
+	"inputsmgr": {
+		"FreeCameraKeyboardMoveInput": {
+			"tags": null,
+			"keysUp": [
+				38
+			],
+			"keysUpward": [
+				33
+			],
+			"keysDown": [
+				40
+			],
+			"keysDownward": [
+				34
+			],
+			"keysLeft": [
+				37
+			],
+			"keysRight": [
+				39
+			]
+		},
+		"FreeCameraMouseInput": {
+			"tags": null,
+			"buttons": [
+				0,
+				1,
+				2
+			],
+			"angularSensibility": 2000
+		}
+	},
+	"animations": [],
+	"ranges": []
+}

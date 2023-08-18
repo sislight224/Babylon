@@ -1,0 +1,18 @@
+{
+	"name": "sounds/bounce.wav",
+	"url": "sounds/bounce.wav",
+	"autoplay": false,
+	"loop": false,
+	"volume": 1,
+	"spatialSound": false,
+	"maxDistance": 100,
+	"rolloffFactor": 1,
+	"refDistance": 1,
+	"distanceModel": "linear",
+	"playbackRate": 1,
+	"panningModel": "equalpower",
+	"soundTrackId": -1,
+	"metadata": {
+		"id": "a4bf7850-8592-499d-ad99-3ead7222395e"
+	}
+}

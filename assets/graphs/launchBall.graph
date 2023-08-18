@@ -1,0 +1,1136 @@
+{
+	"last_node_id": 34,
+	"last_link_id": 143,
+	"nodes": [
+		{
+			"id": 19,
+			"type": "events/pointer_event",
+			"pos": {
+				"0": 160,
+				"1": 100,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 78
+			},
+			"flags": {},
+			"order": 0,
+			"mode": 0,
+			"inputs": [],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						25
+					]
+				},
+				{
+					"name": "Pick Infos",
+					"type": "PickInfo",
+					"links": null
+				}
+			],
+			"title": "Pointer Event",
+			"properties": {
+				"type": "POINTERDOWN"
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 20,
+			"type": "mesh/create_mesh_instance",
+			"pos": {
+				"0": 470,
+				"1": 100,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 78
+			},
+			"flags": {},
+			"order": 7,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 25
+				},
+				{
+					"name": "Mesh *",
+					"type": "Mesh",
+					"link": 30
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						31
+					]
+				},
+				{
+					"name": "Instance",
+					"type": "Node,TransformNode,AbstractMesh,InstancedMesh",
+					"links": [
+						32
+					]
+				}
+			],
+			"title": "Create Mesh Instance",
+			"properties": {
+				"name": "ball instance"
+			},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 23,
+			"type": "mesh/absolute_transform_mesh",
+			"pos": {
+				"0": 530,
+				"1": 230,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 151.1999969482422,
+				"1": 86
+			},
+			"flags": {},
+			"order": 8,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "Mesh *",
+					"type": "AbstractMesh",
+					"link": 33,
+					"linkedOutput": "Mesh"
+				}
+			],
+			"outputs": [
+				{
+					"name": "Mesh",
+					"type": "Node,TransformNode,AbstractMesh",
+					"links": null
+				},
+				{
+					"name": "Position",
+					"type": "Vector3",
+					"links": [
+						34
+					]
+				},
+				{
+					"name": "Rotation",
+					"type": "Quaternion",
+					"links": null
+				},
+				{
+					"name": "Scaling",
+					"type": "Vector3",
+					"links": null
+				}
+			],
+			"title": "Absolute Transform",
+			"properties": {},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 22,
+			"type": "mesh/transform_mesh",
+			"pos": {
+				"0": 790,
+				"1": 100,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 329.20001220703125,
+				"1": 126
+			},
+			"flags": {},
+			"order": 9,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 31
+				},
+				{
+					"name": "Mesh *",
+					"type": "AbstractMesh",
+					"link": 32,
+					"linkedOutput": "Mesh"
+				},
+				{
+					"name": "Position",
+					"type": "Vector3",
+					"link": 34
+				},
+				{
+					"name": "Rotation",
+					"type": "Vector3",
+					"link": null
+				},
+				{
+					"name": "Scaling",
+					"type": "Vector3",
+					"link": null
+				},
+				{
+					"name": "Rotation Quaternion",
+					"type": "Quaternion",
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						35
+					]
+				},
+				{
+					"name": "Mesh",
+					"type": "Node,TransformNode,AbstractMesh,InstancedMesh",
+					"links": [
+						36,
+						51,
+						98
+					]
+				},
+				{
+					"name": "Position",
+					"type": "Vector3",
+					"links": [
+						39
+					]
+				},
+				{
+					"name": "Rotation",
+					"type": "Vector3",
+					"links": null
+				},
+				{
+					"name": "Scaling",
+					"type": "Vector3",
+					"links": null
+				},
+				{
+					"name": "Rotation Quaternion",
+					"type": "Quaternion",
+					"links": null
+				}
+			],
+			"title": "Mesh Transform",
+			"properties": {},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 26,
+			"type": "camera/get_camera_direction",
+			"pos": {
+				"0": 1220,
+				"1": 310,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 186.39999389648438,
+				"1": 46
+			},
+			"flags": {},
+			"order": 6,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "Camera *",
+					"type": "Camera",
+					"link": 41,
+					"linkedOutput": "Camera"
+				},
+				{
+					"name": "Local Axis *",
+					"type": "Vector3",
+					"link": 42
+				}
+			],
+			"outputs": [
+				{
+					"name": "Camera",
+					"type": "Node,Camera",
+					"links": null
+				},
+				{
+					"name": "Direction",
+					"type": "Vector3",
+					"links": [
+						40
+					]
+				}
+			],
+			"title": "Get Camera Direction",
+			"properties": {},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 27,
+			"type": "camera/camera",
+			"pos": {
+				"0": 950,
+				"1": 320,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 82
+			},
+			"flags": {
+				"collapsed": true
+			},
+			"order": 1,
+			"mode": 0,
+			"inputs": [],
+			"outputs": [
+				{
+					"name": "Camera",
+					"type": "Node,Camera",
+					"links": [
+						41
+					]
+				}
+			],
+			"title": "camera (Camera)",
+			"properties": {
+				"var_name": "camera",
+				"name": "camera"
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 28,
+			"type": "vector/vector_3d",
+			"pos": {
+				"0": 990,
+				"1": 370,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 146
+			},
+			"flags": {
+				"collapsed": true
+			},
+			"order": 2,
+			"mode": 0,
+			"inputs": [
+				{
+					"name": "x",
+					"type": "number",
+					"link": null
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"link": null
+				},
+				{
+					"name": "z",
+					"type": "number",
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": "Vector3",
+					"links": [
+						42
+					]
+				}
+			],
+			"title": "Vector 3D",
+			"properties": {
+				"value": {
+					"_isDirty": true,
+					"_x": 0,
+					"_y": 0,
+					"_z": 30
+				}
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 24,
+			"type": "physics/create_physics_impostor",
+			"pos": {
+				"0": 1220,
+				"1": -30,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 150
+			},
+			"flags": {},
+			"order": 10,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 35
+				},
+				{
+					"name": "Mesh *",
+					"type": "AbstractMesh",
+					"link": 36,
+					"linkedOutput": "Mesh"
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						37
+					]
+				},
+				{
+					"name": "Mesh",
+					"type": "Node,TransformNode,AbstractMesh,InstancedMesh",
+					"links": [
+						38,
+						61,
+						137
+					]
+				}
+			],
+			"title": "Create Physics Impostor",
+			"properties": {
+				"type": "SphereImpostor",
+				"mass": 1,
+				"friction": 0.2,
+				"restitution": 0.2
+			},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 25,
+			"type": "physics/apply_impulse",
+			"pos": {
+				"0": 1530,
+				"1": 80,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 169.60000610351562,
+				"1": 86
+			},
+			"flags": {},
+			"order": 11,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 37
+				},
+				{
+					"name": "Mesh *",
+					"type": "AbstractMesh",
+					"link": 38,
+					"linkedOutput": "Mesh"
+				},
+				{
+					"name": "Force *",
+					"type": "Vector3",
+					"link": 40
+				},
+				{
+					"name": "Contact Point *",
+					"type": "Vector3",
+					"link": 39
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						43,
+						48
+					]
+				},
+				{
+					"name": "Mesh",
+					"type": "Node,TransformNode,AbstractMesh,InstancedMesh",
+					"links": [
+						47,
+						65,
+						143
+					]
+				}
+			],
+			"title": "Apply Impulse",
+			"properties": {},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 32,
+			"type": "node/dispose_node",
+			"pos": {
+				"0": 2100,
+				"1": 250,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 102
+			},
+			"flags": {},
+			"order": 14,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 46
+				},
+				{
+					"name": "Node *",
+					"type": "Node",
+					"link": 47
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						49
+					]
+				}
+			],
+			"title": "Dispose Node",
+			"properties": {
+				"do_not_recurse": true,
+				"dispose_material_and_textures": false
+			},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 33,
+			"type": "sound/play_sound",
+			"pos": {
+				"0": 2420,
+				"1": 250,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 140,
+				"1": 46
+			},
+			"flags": {},
+			"order": 15,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 49
+				},
+				{
+					"name": "Sound *",
+					"type": "Sound",
+					"link": 50
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": null
+				}
+			],
+			"title": "Play Sound",
+			"properties": {},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 31,
+			"type": "events/timeout_event",
+			"pos": {
+				"0": 1800,
+				"1": 250,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 78
+			},
+			"flags": {},
+			"order": 13,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 48
+				},
+				{
+					"name": "Duration",
+					"type": "number",
+					"link": null
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": [
+						46
+					]
+				},
+				{
+					"name": "Id",
+					"type": "number",
+					"links": null
+				}
+			],
+			"title": "Set Timeout",
+			"properties": {
+				"duration": 1000
+			},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 29,
+			"type": "sound/play_sound",
+			"pos": {
+				"0": 1800,
+				"1": 30,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 140,
+				"1": 46
+			},
+			"flags": {},
+			"order": 12,
+			"mode": 3,
+			"inputs": [
+				{
+					"name": "",
+					"type": -1,
+					"link": 43
+				},
+				{
+					"name": "Sound *",
+					"type": "Sound",
+					"link": 44
+				}
+			],
+			"outputs": [
+				{
+					"name": "",
+					"type": -1,
+					"links": []
+				}
+			],
+			"title": "Play Sound",
+			"properties": {},
+			"color": "#151",
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 21,
+			"type": "mesh/mesh",
+			"pos": {
+				"0": 160,
+				"1": 230,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 208,
+				"1": 119
+			},
+			"flags": {},
+			"order": 3,
+			"mode": 0,
+			"inputs": [],
+			"outputs": [
+				{
+					"name": "mesh",
+					"type": "Node,TransformNode,AbstractMesh,Mesh",
+					"links": [
+						30,
+						33
+					]
+				},
+				{
+					"name": "Skeleton",
+					"type": "Skeleton",
+					"links": null
+				},
+				{
+					"name": "Material",
+					"type": "Material",
+					"links": null
+				}
+			],
+			"title": "Mesh (ball)",
+			"properties": {
+				"var_name": "ball",
+				"name": "ball"
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 34,
+			"type": "sound/sound",
+			"pos": {
+				"0": 2120,
+				"1": 400,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 82
+			},
+			"flags": {
+				"collapsed": true
+			},
+			"order": 4,
+			"mode": 0,
+			"inputs": [],
+			"outputs": [
+				{
+					"name": "Sound",
+					"type": "Sound",
+					"links": [
+						50
+					]
+				}
+			],
+			"title": "Sound (sounds/bounce.wav)",
+			"properties": {
+				"name": "sounds/bounce.wav",
+				"var_name": "bounce"
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		},
+		{
+			"id": 30,
+			"type": "sound/sound",
+			"pos": {
+				"0": 1540,
+				"1": 20,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 0,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0
+			},
+			"size": {
+				"0": 210,
+				"1": 82
+			},
+			"flags": {
+				"collapsed": true
+			},
+			"order": 5,
+			"mode": 0,
+			"inputs": [],
+			"outputs": [
+				{
+					"name": "Sound",
+					"type": "Sound",
+					"links": [
+						44
+					]
+				}
+			],
+			"title": "Sound (sounds/gunshot.wav)",
+			"properties": {
+				"name": "sounds/gunshot.wav",
+				"var_name": "gunshot"
+			},
+			"bgcolor": "#353535",
+			"boxcolor": "#666",
+			"shape": 2
+		}
+	],
+	"links": [
+		[
+			25,
+			19,
+			0,
+			20,
+			0,
+			-1
+		],
+		[
+			30,
+			21,
+			0,
+			20,
+			1,
+			"Mesh"
+		],
+		[
+			31,
+			20,
+			0,
+			22,
+			0,
+			-1
+		],
+		[
+			32,
+			20,
+			1,
+			22,
+			1,
+			"AbstractMesh"
+		],
+		[
+			33,
+			21,
+			0,
+			23,
+			0,
+			"AbstractMesh"
+		],
+		[
+			34,
+			23,
+			1,
+			22,
+			2,
+			"Vector3"
+		],
+		[
+			35,
+			22,
+			0,
+			24,
+			0,
+			-1
+		],
+		[
+			36,
+			22,
+			1,
+			24,
+			1,
+			"AbstractMesh"
+		],
+		[
+			37,
+			24,
+			0,
+			25,
+			0,
+			-1
+		],
+		[
+			38,
+			24,
+			1,
+			25,
+			1,
+			"AbstractMesh"
+		],
+		[
+			39,
+			22,
+			2,
+			25,
+			3,
+			"Vector3"
+		],
+		[
+			40,
+			26,
+			1,
+			25,
+			2,
+			"Vector3"
+		],
+		[
+			41,
+			27,
+			0,
+			26,
+			0,
+			"Camera"
+		],
+		[
+			42,
+			28,
+			0,
+			26,
+			1,
+			"Vector3"
+		],
+		[
+			43,
+			25,
+			0,
+			29,
+			0,
+			-1
+		],
+		[
+			44,
+			30,
+			0,
+			29,
+			1,
+			"Sound"
+		],
+		[
+			46,
+			31,
+			0,
+			32,
+			0,
+			-1
+		],
+		[
+			47,
+			25,
+			1,
+			32,
+			1,
+			"Node"
+		],
+		[
+			48,
+			25,
+			0,
+			31,
+			0,
+			-1
+		],
+		[
+			49,
+			32,
+			0,
+			33,
+			0,
+			-1
+		],
+		[
+			50,
+			34,
+			0,
+			33,
+			1,
+			"Sound"
+		],
+		[
+			51,
+			22,
+			1,
+			24,
+			1,
+			"AbstractMesh"
+		],
+		[
+			61,
+			24,
+			1,
+			25,
+			1,
+			"AbstractMesh"
+		],
+		[
+			65,
+			25,
+			1,
+			32,
+			1,
+			"Node"
+		],
+		[
+			98,
+			22,
+			1,
+			24,
+			1,
+			"AbstractMesh"
+		],
+		[
+			137,
+			24,
+			1,
+			25,
+			1,
+			"AbstractMesh"
+		],
+		[
+			143,
+			25,
+			1,
+			32,
+			1,
+			"Node"
+		]
+	],
+	"groups": [],
+	"config": {
+		"align_to_grid": true
+	},
+	"version": 0.4
+}
